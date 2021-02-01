@@ -1,0 +1,18 @@
+diagram:
+  # when set to true, a second chart will be displayed. In this chart, O moves with negative velocity along O' x axis.
+  showOPrime: true
+  # the title displayed above the plots
+  title: Spacetime diagram
+
+movingObserver:
+  # the velocity of O' relative to O. It's along the x axis. 0.1 means 10% of the speed of light, 0.99 means 99% of the speed of light
+  velocity: 0.5
+
+# a list of  world lines, expressed in O coordinates.
+# to enter a world line, enter its label and a series of events separated by commas
+# whitespaces are allowed.
+worldLines:
+  - label: photon
+    events: (0,0), (15,15), (18,18)
+  - label: spaceship
+    events: (0,0), (4,6),(6,11), (6, 18)
